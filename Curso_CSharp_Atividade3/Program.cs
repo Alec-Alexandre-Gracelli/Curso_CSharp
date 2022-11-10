@@ -2,6 +2,9 @@
 
 namespace Curso_CSharp_Atividade3
 {
+    // métodos na própria classe do programa
+    // ...Nota: dentro de um método estático você não pode chamar membros de instância da mesma classe.
+
     class Program
     {
         static double Pi = 3.14;
