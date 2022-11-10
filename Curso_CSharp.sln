@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso_CSharp", "Curso_CSharp\Curso_CSharp.csproj", "{C3B3801C-87C6-4673-A1B6-C6B8B6B789AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp", "Curso_CSharp\Curso_CSharp.csproj", "{C3B3801C-87C6-4673-A1B6-C6B8B6B789AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso_CSharp_Atividade2", "Curso_CSharp_Atividade2\Curso_CSharp_Atividade2.csproj", "{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C3B3801C-87C6-4673-A1B6-C6B8B6B789AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3B3801C-87C6-4673-A1B6-C6B8B6B789AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3B3801C-87C6-4673-A1B6-C6B8B6B789AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
