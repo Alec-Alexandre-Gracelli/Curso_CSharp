@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp", "Curso_CShar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp_Atividade2", "Curso_CSharp_Atividade2\Curso_CSharp_Atividade2.csproj", "{ACCBB2DB-AA9B-4BD1-9AC5-9B3671FE0ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso_CSharp_Atividade3", "Curso_CSharp_Atividade3\Curso_CSharp_Atividade3.csproj", "{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp_Atividade3", "Curso_CSharp_Atividade3\Curso_CSharp_Atividade3.csproj", "{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
