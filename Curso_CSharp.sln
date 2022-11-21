@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp_Atividade2", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp_Atividade3", "Curso_CSharp_Atividade3\Curso_CSharp_Atividade3.csproj", "{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Curso_CSharp_Atividade4", "Curso_CSharp_Atividade4\Curso_CSharp_Atividade4.csproj", "{832EF283-8371-4E50-AF45-4C25D6DE5B08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C051692B-32AE-4E21-85A5-4BE4E5A55A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832EF283-8371-4E50-AF45-4C25D6DE5B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832EF283-8371-4E50-AF45-4C25D6DE5B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832EF283-8371-4E50-AF45-4C25D6DE5B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832EF283-8371-4E50-AF45-4C25D6DE5B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
