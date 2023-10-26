@@ -184,36 +184,35 @@ class Program
     }
     static void Exercicio6()
     {
-        int valorN;
-        int valorX = 0;
-        int contadorValorX = 0;
-        int[] listValorX = new int[valorX];
+        int contadorValorXIn = 0;
+        int contadorValorXOut = 0;
 
         Console.WriteLine();
-        valorN = Convert.ToInt32(Console.ReadLine());
+        int valorN = Convert.ToInt32(Console.ReadLine());
+
+        int[] listValorX = new int[valorN];
 
         for (int i = 0; i < valorN; i++)
         {
-            listValorX = new int[valorN];
             Console.WriteLine();
-            valorX = Convert.ToInt32(Console.ReadLine());
+            int valorX = Convert.ToInt32(Console.ReadLine());
+
+            listValorX[i] = valorX;
         }
 
-        for (int j = 0; j < listValorX[valorN]; j++)
+        for (int i = 0; i < listValorX.Length; i++)
         {
-            if (valorX >= 10 && valorX <= 20)
+            if (listValorX[i] >= 10 && listValorX[i] <= 20)
             {
-                contadorValorX += 1;
-                Console.WriteLine($"{contadorValorX} in");
+                contadorValorXIn += 1;
             }
-
             else
             {
-                contadorValorX += 1;
-                Console.WriteLine($"{contadorValorX} out");
+                contadorValorXOut += 1;
             }
         }
-
+        Console.WriteLine($"{contadorValorXIn} in");
+        Console.WriteLine($"{contadorValorXOut} out");
         Console.ReadKey();
     }
 }
