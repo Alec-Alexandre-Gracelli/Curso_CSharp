@@ -6,6 +6,25 @@ namespace Course
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Escolha o exercício para executar (1, 2): ");
+            int escolha = Convert.ToInt32(Console.ReadLine());
+
+            switch (escolha)
+            {
+                case 1:
+                    AreaTriangulo();
+                    break;
+                case 2:
+                    Produto();
+                    break;
+                default:
+                    Console.WriteLine("Escolha inválida.");
+                    break;
+            }
+        }
+
+        static void AreaTriangulo()
+        {
             Triangulo x, y;
 
             x = new Triangulo();
@@ -37,5 +56,28 @@ namespace Course
                 Console.WriteLine("Maior área: Y");
             }
         }
+
+        static void Produto()
+        {
+            Produto produto = new Produto();
+
+            Console.WriteLine("Entre os dados do produto:");
+            Console.Write("Nome: ");
+            produto.Nome = Console.ReadLine();
+            Console.Write("Preço: ");
+            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Quantidade no estoque: ");
+            produto.Quantidade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.WriteLine("Dados do produto: " + produto);
+
+            Console.WriteLine();
+            Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque: ");
+            int qte = int.Parse(Console.ReadLine());
+        }
+
     }
+
 }
+
