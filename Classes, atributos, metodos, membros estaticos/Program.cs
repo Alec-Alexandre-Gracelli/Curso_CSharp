@@ -6,7 +6,7 @@ namespace Course
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Escolha o exercício para executar (1, 2): ");
+            Console.WriteLine("Escolha o exercício para executar (1, 2, 3): ");
             int escolha = Convert.ToInt32(Console.ReadLine());
 
             switch (escolha)
@@ -17,12 +17,16 @@ namespace Course
                 case 2:
                     Produto();
                     break;
+                case 3:
+                    Raio();
+                    break;
                 default:
                     Console.WriteLine("Escolha inválida.");
                     break;
             }
         }
 
+        static double Pi = 3.14;
         static void AreaTriangulo()
         {
             Triangulo x, y;
@@ -73,10 +77,44 @@ namespace Course
             Console.WriteLine("Dados do produto: " + produto);
 
             Console.WriteLine();
-            Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque: ");
+            Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
             int qte = int.Parse(Console.ReadLine());
+            produto.AdicionarProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + produto);
+
+            Console.WriteLine();
+            Console.Write("Digite o número de produtos a ser removido do estoque: ");
+            qte = int.Parse(Console.ReadLine());
+            produto.RemoverProdutos(qte);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + produto);
         }
 
+        static void Raio()
+        {
+            Console.WriteLine("Entre o valor do raio: ");
+            double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double circ = Circunferencia(raio);
+            double volume = Volume(raio);
+
+            Console.WriteLine("Circunferência: " + circ.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Valor de PI: " + Pi.ToString("F2", CultureInfo.InvariantCulture));
+        }
+
+        static double Circunferencia(double r)
+        {
+            return 2.0 * Pi * r;
+        }
+
+        static double Volume(double r)
+        {
+            return 4.0 / 3.0 * Pi * r * r * r;
+        }
     }
 
 }
