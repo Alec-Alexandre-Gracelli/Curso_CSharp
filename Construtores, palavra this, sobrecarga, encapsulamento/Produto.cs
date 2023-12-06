@@ -10,20 +10,18 @@ namespace Construtores__palavra_this__sobrecarga__encapsulamento
 
         public Produto()
         {
+            Quantidade = 10;
         }
 
-        public Produto(string nome, double preco, int quantidade)
+        public Produto(string nome, double preco) : this() 
         {
             Nome = nome;
             Preco = preco;
+        }
+
+        public Produto(string nome, double preco, int quantidade) : this(nome, preco)
+        {
             Quantidade = quantidade;
-        }
-
-        public Produto(string nome, double preco) 
-        {
-            Nome = nome;
-            Preco = preco;
-            Quantidade = 0;
         }
 
         public double ValorTotalEmEstoque()
